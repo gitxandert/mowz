@@ -15,7 +15,8 @@ This is a simple daemon that reads keyboard input and maps it to mouse actions.
 `mowz / mowz help`: lists mowz's commands, bindings, and tips
 
 ## Bindings
-Currently, these bindings aren't editable. :) I might change this someday.  
+Currently, these bindings aren't editable. :) I might change this someday.
+
 `left_ctl + left_shift + m`: toggle keyboard grabbing  
 **Note: normal keyboard actions are turned off while the keyboard is grabbed; only the following will work.**   
 `left_ctl (hold)`: increase step factor  
