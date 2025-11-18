@@ -7,7 +7,7 @@ This is a simple daemon that reads keyboard input and maps it to mouse actions.
     cd mowz
     make && sudo make install
 
-**Note: this doesn't run under the perview of systemd.** All logs are sent to syslog and can be read by running `journalctl -t mowz`.
+**Note: this doesn't run under the purview of systemd.** All logs are sent to syslog and can be read by running `journalctl -t mowz`.
 
 ## Commands
 `sudo mowz start`: starts the mowz daemon  
