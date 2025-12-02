@@ -210,7 +210,7 @@ int main(int argc, char *argv[]) {
         }
         break;
       }
-      case KEY_LEFTSHIFT: {
+      case KEY_LEFTALT: {
         if (value == KEY_DEPRESSED) {
           grab_shift = 1;
         } else if (value == KEY_RELEASED) {
@@ -356,7 +356,7 @@ static void print_help() {
   printf("\tsudo mowz stop: stop mowz daemon\n");
   printf("\tmowz / mowz help: show mowz commands and bindings\n\n");
   printf("    --bindings:\n");
-  printf("\tleft_ctl + left_shift + m: toggle keyboard grabbing\n");
+  printf("\tleft_ctl + left_alt + m: toggle keyboard grabbing\n");
   printf("\tleft_ctl (hold): increase step factor\n");
   printf("\th: move left\n");
   printf("\tj: move down\n");
