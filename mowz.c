@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
       unlink(PID_FILE);
       exit(EXIT_FAILURE);
     }
-     
+
     fclose(mowz_fp);
     unlink(PID_FILE);
 
@@ -229,6 +229,10 @@ int main(int argc, char *argv[]) {
           }
         } else if (value == KEY_RELEASED) {
           ioctl(fd_kbd, EVIOCGRAB, grab);
+          if (grab == 1) {
+            write_to_device(fd_uin, mowz, EV_KEY, KEY_LEFTALT, KEY_RELEASED);
+            write_to_device(fd_uin, mowz, EV_KEY, KEY_LEFTCTRL, KEY_RELEASED);
+          }
         }
         break;
       }
